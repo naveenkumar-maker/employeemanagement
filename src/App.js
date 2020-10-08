@@ -1,24 +1,31 @@
-import React from 'react';
-import logo from './logo.svg';
+import React from 'react'
 import './App.css';
+import Createemployee from './Components/Createemployee';
+import Employeeupdate from './Components/Employeeupdate';
+import Editemployee from './Components/Editemployee';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+  
+} from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Deleteemployee from './Components/Deleteemployee';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      
+      <Router>
+
+      <Switch>
+          <Route path="/"exact component={Createemployee}/>
+          <Route path="/update" exact component={Employeeupdate}/>
+          <Route path="/edit"  exact component={Editemployee}/>
+          <Route path='/delete' exact component={Deleteemployee}/>
+        
+        </Switch>
+      </Router>
     </div>
   );
 }

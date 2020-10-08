@@ -1,0 +1,37 @@
+.body{
+  margin:0;
+  padding:0;
+  
+}
+ 
+ .employees {
+   
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+ 
+  .employees td, .employees th {
+    border: 1px solid #ddd;
+     
+  }
+
+  .employees td{
+    margin:0;
+    padding:0;
+  }
+  .employees th {
+    margin:0;
+    padding:0;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align:center;
+    background-color:rgb(248, 185, 10);
+    ;
+    color: white;
+  }
+  
+  
+
+
+
